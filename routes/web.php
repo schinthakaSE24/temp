@@ -28,4 +28,4 @@ use App\Http\Controllers\HomeController;
 //     })->name('dashboard');
 // });
 
-Route::get('/', [HomeController::class, 'index'])->name("dashboard");
+Route::get('/dashboard', [HomeController::class, 'index'])->name("dashboard");
