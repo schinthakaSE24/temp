@@ -62,8 +62,7 @@
         </div>
     </main>
 
-
-
+    @include('libraries.scripts')
 </body>
 
 </html>
