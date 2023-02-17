@@ -61,7 +61,7 @@
                                         <p class="mb-0">Enter your email and password to sign in</p>
                                     </div>
                                     <div class="card-body">
-                                        <form role="form" action="{{ route('login') }}">
+                                        <form role="form" method="POST" action="{{ route('login') }}">
                                             <div class="mb-3">
                                                 <input type="email" class="form-control form-control-lg"
                                                     placeholder="Email" name="email" aria-label="Email">
@@ -84,7 +84,7 @@
                                     <div class="card-footer text-center pt-0 px-lg-2 px-1">
                                         <p class="mb-4 text-sm mx-auto">
                                             Don't have an account?
-                                            <a href="javascript:;" class="text-primary text-gradient font-weight-bold">Sign
+                                            <a href="/register" class="text-primary text-gradient font-weight-bold">Sign
                                                 up</a>
                                         </p>
                                     </div>
