@@ -38,30 +38,18 @@
     <meta property="og:site_name" content="Creative Tim" />
 
     @include('libraries.styles')
-
-    <style>
-
-    </style>
-
-
 </head>
 
 <body class="g-sidenav-show  bg-gray-100">
     <div class="min-height-300 bg-primary position-absolute w-100"></div>
-
     @include('components.side')
     <main class="main-content position-relative border-radius-lg ">
-
-
         @include('components.nav')
-
-
         <div class="container-fluid py-4">
             @yield('content')
             @include('components.footer')
         </div>
     </main>
-
     @include('libraries.scripts')
 </body>
 
