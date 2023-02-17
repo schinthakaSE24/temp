@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\ProductController;
 
 /*
 |--------------------------------------------------------------------------
@@ -29,3 +30,15 @@ use App\Http\Controllers\HomeController;
 // });
 
 Route::get('/dashboard', [HomeController::class, 'index'])->name("dashboard");
+
+Route::prefix('/dashboard')->group(function(){
+
+    Route::get('/create',[ProductController::class,'create'])->name('create');
+    Route::post('/store',[ProductController::class,'store'])->name('store');
+    Route::get('/edit',[ProductController::class,'edit'])->name('edit');
+    Route::put('/update',[ProductController::class,'update'])->name('update');
+    Route::get('/{product_id}/delete',[ProductController::class,'delete'])->name('delete');
+
+
+
+});

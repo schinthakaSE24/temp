@@ -40,8 +40,9 @@
     @include('libraries.styles')
 </head>
 
-<body class="g-sidenav-show  bg-gray-100">
-    <div class="min-height-300 bg-primary position-absolute w-100"></div>
+<body class="g-sidenav-show ">
+    <div class="min-height-300  position-absolute w-100"></div>
+
     @include('components.side')
     <main class="main-content position-relative border-radius-lg ">
         @include('components.nav')
